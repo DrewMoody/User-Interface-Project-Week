@@ -143,9 +143,20 @@ html {
   color: #FFFFFF;
   background: #828282;
 }
+@media (max-width:449px) {
+  .footer {
+    justify-content: flex-start;
+    padding: calc(1.2rem + 0.5vw) 10% calc(1.2rem + 0.5vw) 10%;
+  }
+}
 .footer .footer-100 {
   width: 100%;
   text-align: center;
+}
+@media (max-width:449px) {
+  .footer .footer-100 {
+    text-align: left;
+  }
 }
 .footer .footer-1 {
   margin-bottom: 1rem;
@@ -154,6 +165,11 @@ html {
 @media (max-width: 884px) {
   .footer .footer-1 {
     padding: 0 1rem;
+  }
+}
+@media (max-width:449px) {
+  .footer .footer-1 {
+    padding: 0;
   }
 }
 .footer .footer-1 h5 {
@@ -170,8 +186,13 @@ html {
   width: 50%;
   min-width: 400px;
 }
+@media (max-width:449px) {
+  .footer .addresses {
+    flex-direction: column;
+  }
+}
 .footer address {
-  margin-bottom: 1rem;
+  margin-bottom: calc(1.2rem + 0.5vw);
 }
 .footer p {
   font-size: 10px;
@@ -234,7 +255,7 @@ html {
   }
 }
 .cta .cta-content .cta-text p {
-  margin-bottom: 1rem;
+  margin-bottom: calc(1.2rem + 0.5vw);
 }
 .cta .cta-content .cta-text .button {
   max-width: 110px;
@@ -254,7 +275,6 @@ html {
   min-height: 300px;
   object-fit: cover;
   object-position: 30%;
-  margin: 0 auto;
   align-self: center;
 }
 .cta .reversed img {
@@ -325,7 +345,7 @@ h3 {
   font-weight: 700;
   font-size: calc(1.2rem + 0.5vw);
   color: #222222;
-  margin-bottom: calc(1rem + 0.5vw);
+  margin-bottom: calc(1.2rem + 0.5vw);
 }
 h5 {
   font-weight: 400;

@@ -1,1 +1,304 @@
-/* Should be empty until you compile your LESS */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  font-family: 'Roboto', san-serif;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 10% 0 10%;
+  justify-content: space-around;
+  color: #FFFFFF;
+  background: #828282;
+}
+.footer .footer-100 {
+  width: 100%;
+  text-align: center;
+}
+.footer .footer-1 {
+  margin-bottom: 1rem;
+  padding-right: 1rem;
+}
+@media (max-width: 884px) {
+  .footer .footer-1 {
+    padding: 0 1rem;
+  }
+}
+.footer .footer-1 h5 {
+  margin-bottom: 1rem;
+}
+.footer .footer-1 input {
+  width: 100%;
+  padding: 0.5rem 0.2rem;
+  border-radius: 5px;
+}
+.footer .addresses {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  min-width: 400px;
+}
+.footer address {
+  margin-bottom: 1rem;
+}
+.footer p {
+  font-size: 10px;
+  letter-spacing: 0.05rem;
+}
+.main-header {
+  background-color: #97A4B0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 10% 0 10%;
+}
+.main-header nav {
+  display: none;
+}
+.main-header img {
+  height: 100%;
+  width: auto;
+}
+.jumbotron {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 3rem;
+}
+.jumbotron img {
+  width: 100%;
+  height: 100%;
+  max-height: 700px;
+  object-fit: cover;
+  object-position: 0 80%;
+}
+.jumbotron .title-text {
+  position: absolute;
+  z-index: 1;
+  padding: 0 0 5% 7%;
+}
+.main {
+  width: 85%;
+  margin: 0 auto;
+}
+.cta .cta-content {
+  display: flex;
+  margin-bottom: 5rem;
+}
+.cta .cta-content .cta-text {
+  padding: 2rem 4% 0 0;
+  width: 51.5%;
+}
+.cta .cta-content .cta-text p {
+  margin-bottom: 1rem;
+}
+.cta .cta-content .cta-text .button {
+  max-width: 110px;
+  text-align: center;
+  padding: 1rem 0;
+  box-shadow: 0 0 3px #222222;
+}
+.cta .cta-content img {
+  width: 48.5%;
+  height: 48.5%;
+  margin: 0 auto;
+  align-self: center;
+}
+.cta .reversed {
+  flex-direction: row-reverse;
+}
+.cta .reversed .cta-text {
+  padding: 2rem 0 0 4%;
+}
+.recent .recent-content {
+  display: flex;
+  flex-direction: column;
+}
+.recent img {
+  width: 100%;
+  height: auto;
+}
+.recent h3 {
+  width: 250px;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  border: 1px solid white;
+  background-color: #D8D8D8;
+  margin-top: -40px;
+  margin-bottom: 0;
+  align-self: flex-end;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+}
+.recent p {
+  width: 450px;
+  margin: 3rem auto 4rem auto;
+}
+.recent .recent-reversed {
+  align-self: flex-start;
+}
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  color: #FFFFFF;
+}
+h2,
+h3 {
+  font-weight: 700;
+  font-size: 28px;
+  color: #222222;
+  margin-bottom: 1rem;
+}
+h5 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+.main-header h2 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #FFFFFF;
+}

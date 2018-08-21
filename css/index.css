@@ -146,7 +146,7 @@ html {
 @media (max-width:449px) {
   .footer {
     justify-content: flex-start;
-    padding: calc(1.2rem + 0.5vw) 10% calc(1.2rem + 0.5vw) 10%;
+    padding: calc(1.2rem + 0.5vw) 10%;
   }
 }
 .footer .footer-100 {
@@ -189,6 +189,8 @@ html {
 @media (max-width:449px) {
   .footer .addresses {
     flex-direction: column;
+    width: 100%;
+    min-width: 0;
   }
 }
 .footer address {
@@ -202,7 +204,7 @@ html {
   background-color: #97A4B0;
   display: flex;
   justify-content: space-between;
-  padding: 1rem 10% 0 10%;
+  padding: calc(1.2rem + 0.2vw) 10%;
 }
 .main-header nav {
   display: none;
@@ -210,6 +212,9 @@ html {
 .main-header img {
   height: 100%;
   width: auto;
+}
+.main-header h2 {
+  margin-bottom: 0;
 }
 .jumbotron {
   display: flex;

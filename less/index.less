@@ -6,43 +6,44 @@
 @test: #DFDFDF;
 @tablet: ~"(max-width:768px)";
 @phone: ~"(max-width:500px)";
+@ctabreak: ~"(max-width:549px)";
 
 p { // GENERAL TEXT
   font-weight:400;
-  font-size:16px;
-  line-height:24px;
+  font-size:calc(0.7rem + 0.5vw);
+  line-height:1.5;
 }
 
 h1 { // JUMBOTRON HEADERS
   font-weight: 700;
-  font-size: 64px;
-  line-height: 75px;
+  font-size: calc(1rem + 6vw);
+  line-height: 1.15;
   color: #FFFFFF;
 }
 
 h2, h3 { // SUB HEADERS
   font-weight:700;
-  font-size:28px;
+  font-size:calc(1.2rem + 0.5vw);
   color: #222222;
-  margin-bottom:1rem;
+  margin-bottom:calc(1rem + 0.5vw);
 }
 
 h5 { // FOOTER HEADINGS
   font-weight: 400;
-  font-size:20px;
-  line-height:24px;
+  font-size:calc(0.9rem + 0.5vw);
+  line-height:1.2;
   color:#FFFFFF;
 }
 
 address { // FOOTER TEXT
   font-weight: 400;
-  font-size: 14px;
-  line-height:26px;
+  font-size: calc(0.6rem + 0.5vw);
+  line-height:1.6;
   color: #FFFFFF;
 }
 
 .main-header h2 { // S&J
   font-weight: 700;
-  font-size: 24px;
+  font-size: calc(1rem + 0.5vw);
   color:#FFFFFF;
 }

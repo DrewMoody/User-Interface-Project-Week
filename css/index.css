@@ -215,9 +215,23 @@ html {
   display: flex;
   margin-bottom: 5rem;
 }
+@media (max-width:549px) {
+  .cta .cta-content {
+    flex-direction: column-reverse;
+    margin-bottom: 3rem;
+  }
+}
 .cta .cta-content .cta-text {
-  padding: 2rem 4% 0 0;
+  padding-right: 4%;
   width: 51.5%;
+  align-self: center;
+}
+@media (max-width:549px) {
+  .cta .cta-content .cta-text {
+    padding-right: 0;
+    width: 300px;
+    margin-top: calc(1.2rem + 0.5vw);
+  }
 }
 .cta .cta-content .cta-text p {
   margin-bottom: 1rem;
@@ -228,17 +242,36 @@ html {
   padding: 1rem 0;
   box-shadow: 0 0 3px #222222;
 }
+@media (max-width:549px) {
+  .cta .cta-content .cta-text .button {
+    max-width: 300px;
+  }
+}
 .cta .cta-content img {
   width: 48.5%;
   height: 48.5%;
+  min-width: 300px;
+  min-height: 300px;
+  object-fit: cover;
+  object-position: 30%;
   margin: 0 auto;
   align-self: center;
 }
-.cta .reversed {
-  flex-direction: row-reverse;
+.cta .reversed img {
+  order: -1;
+}
+@media (max-width:549px) {
+  .cta .reversed img {
+    order: 1;
+  }
 }
 .cta .reversed .cta-text {
-  padding: 2rem 0 0 4%;
+  padding-left: 4%;
+}
+@media (max-width:549px) {
+  .cta .reversed .cta-text {
+    padding-left: 0;
+  }
 }
 .recent .recent-content {
   display: flex;
@@ -247,6 +280,9 @@ html {
 .recent img {
   width: 100%;
   height: auto;
+  min-height: 200px;
+  object-fit: cover;
+  object-position: 25%;
 }
 .recent h3 {
   width: 250px;
@@ -260,8 +296,14 @@ html {
   font-weight: 400;
   letter-spacing: 0.3rem;
 }
+@media (max-width:549px) {
+  .recent h3 {
+    width: 95%;
+    margin: -20px auto 0 auto;
+  }
+}
 .recent p {
-  width: 450px;
+  max-width: 450px;
   margin: 3rem auto 4rem auto;
 }
 .recent .recent-reversed {
@@ -269,36 +311,36 @@ html {
 }
 p {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: calc(0.7rem + 0.5vw);
+  line-height: 1.5;
 }
 h1 {
   font-weight: 700;
-  font-size: 64px;
-  line-height: 75px;
+  font-size: calc(1rem + 6vw);
+  line-height: 1.15;
   color: #FFFFFF;
 }
 h2,
 h3 {
   font-weight: 700;
-  font-size: 28px;
+  font-size: calc(1.2rem + 0.5vw);
   color: #222222;
-  margin-bottom: 1rem;
+  margin-bottom: calc(1rem + 0.5vw);
 }
 h5 {
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: calc(0.9rem + 0.5vw);
+  line-height: 1.2;
   color: #FFFFFF;
 }
 address {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 26px;
+  font-size: calc(0.6rem + 0.5vw);
+  line-height: 1.6;
   color: #FFFFFF;
 }
 .main-header h2 {
   font-weight: 700;
-  font-size: 24px;
+  font-size: calc(1rem + 0.5vw);
   color: #FFFFFF;
 }

@@ -315,6 +315,11 @@ html {
   object-fit: cover;
   object-position: 25%;
 }
+@media (max-width:549px) {
+  .recent h2 {
+    margin-left: 5%;
+  }
+}
 .recent h3 {
   width: 250px;
   text-align: center;

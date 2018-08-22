@@ -228,7 +228,7 @@ html {
   align-items: center;
   flex-direction: column;
   top: 60px;
-  padding-top: calc(3rem + 6vw);
+  padding-top: calc(3rem + 10vw);
 }
 .main-header .hidden {
   display: none;

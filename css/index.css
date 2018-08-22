@@ -197,7 +197,7 @@ html {
   margin-bottom: calc(1.2rem + 0.5vw);
 }
 .footer p {
-  font-size: 10px;
+  font-size: calc(0.4rem + 0.3vw);
   letter-spacing: 0.05rem;
 }
 .main-header {
@@ -237,6 +237,11 @@ html {
 .main {
   width: 85%;
   margin: 0 auto;
+}
+@media (max-width:549px) {
+  .main {
+    width: 100%;
+  }
 }
 .cta .cta-content {
   display: flex;

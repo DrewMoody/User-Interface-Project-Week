@@ -201,15 +201,47 @@ html {
   font-size: calc(0.4rem + 0.3vw);
   letter-spacing: 0.05rem;
 }
+.sticky {
+  position: fixed;
+}
 .main-header {
   background-color: #97A4B0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  z-index: 10;
+}
+.main-header .header-top {
   display: flex;
   justify-content: space-between;
   padding: calc(1.2rem + 0.2vw) 10%;
   align-items: center;
+  width: 100%;
 }
-.main-header nav {
+.main-header .show-nav {
+  display: flex;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background: #97A4B0F2;
+  z-index: 10;
+  align-items: center;
+  flex-direction: column;
+  top: 60px;
+  padding-top: calc(3rem + 6vw);
+}
+.main-header .hidden {
   display: none;
+}
+.main-header .active {
+  color: #222222;
+}
+.main-header a {
+  text-decoration: none;
+  color: white;
+  font-size: calc(1rem + 6vw);
+  font-weight: 700;
+  line-height: 1.5;
 }
 .main-header img {
   height: 100%;

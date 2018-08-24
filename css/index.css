@@ -178,6 +178,7 @@ address {
   justify-content: space-around;
   color: #FFFFFF;
   background: #828282;
+  position: relative;
 }
 @media (max-width:449px) {
   .footer {

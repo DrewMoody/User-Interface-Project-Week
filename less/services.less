@@ -20,6 +20,13 @@
       text-align:center;
       margin:calc(1.2rem + 0.5vw) 0;
       min-width:150px;
+      cursor:pointer;
+
+      &:hover {
+        background:#555555;
+        border: 1px solid black;
+        color:#FFFFFF;
+      }
 
       @media @tablet {
         width:100%;
@@ -31,6 +38,7 @@
       background:#609FB7;
       color:#FFFFFF;
       border:1px solid black;
+      pointer-events: none;
     }
   }
 
@@ -44,7 +52,7 @@
       @media @tablet {
         padding-right:0;
         width:100%;
-        margin-top:calc(1.2rem + 0.5vw);
+        margin-bottom:calc(1.2rem + 0.5vw);
       }
     }
 
@@ -69,7 +77,7 @@
     align-items: center;
 
     @media @tablet {
-      flex-direction:column-reverse;
+      flex-direction:column;
     }
   }
 }

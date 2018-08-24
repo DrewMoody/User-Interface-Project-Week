@@ -35,23 +35,40 @@ hamClosed.addEventListener('click', burgerClick);
 
 hamOpen.addEventListener('click', burgerClick);
 
-// Scroll Magic fade in
-const controller = new ScrollMagic.Controller();
+// SERVICES TABS
+class TabLink {
+  constructor(element) {
+    this.element = element;
+    this.data = this.element.dataset.tab;
+    this.item = document.querySelector(`.tab-content[data-tab="${this.data}"]`);
+    this.tabItem = new TabItem(this.item);
+    this.element.addEventListener('click', () => {
+      this.select();
+    });
+  };
+  select() {
+    const tabs = document.querySelectorAll(`.tab`);
+    tabs.forEach(tab => {
+      tab.classList.remove('selected-tab');
+    });
+    this.element.classList.add('selected-tab');
+    this.tabItem.select();
+  };
+};
 
-let test2 = [...document.querySelectorAll('.cta-content'),...document.querySelectorAll('.recent-content')];
-// currently splicing to remove the first element. This is done to prevent buggy behavior on page load
-test2.splice(0, 1);
+class TabItem {
+  constructor(element) {
+    this.element = element;
+  }
 
-test2.forEach(x => {
-  x.classList.add('fade-in');
+  select() {
+    const items = document.querySelectorAll('.tab-content');
+    items.forEach(item => {
+      item.classList.remove('show-content');
+    });
+    this.element.classList.add('show-content');
+  };
+};
 
-  const testTween = TweenMax.from(x, 0.75, {autoAlpha:0,  scale: 0.5, y:'-=200'}); //, ease: Back.easeIn.config(1.7)}) // Linear.easeNone})
-
-  let scene = new ScrollMagic.Scene({
-    triggerElement: x,
-    triggerHook: 0.8,
-    reverse:false
-  })
-  .setTween(testTween)
-  .addTo(controller);
-})
+let tabs = document.querySelectorAll('.tab');
+tabs = Array.from(tabs).map(tab => new TabLink(tab));

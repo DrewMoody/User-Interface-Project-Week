@@ -179,6 +179,7 @@ address {
   color: #FFFFFF;
   background: #828282;
   position: relative;
+  margin-top: calc(2rem + 5vw);
 }
 @media (max-width:449px) {
   .footer {
@@ -305,7 +306,7 @@ address {
 .jumbotron {
   display: flex;
   align-items: flex-end;
-  margin-bottom: 3rem;
+  margin-bottom: calc(2rem + 5vw);
 }
 .jumbotron img {
   width: 100%;
@@ -391,6 +392,7 @@ address {
 .recent .recent-content {
   display: flex;
   flex-direction: column;
+  margin-bottom: calc(2rem + 5vw);
 }
 .recent img {
   width: 100%;
@@ -426,7 +428,7 @@ address {
 .recent p {
   width: 40%;
   min-width: 450px;
-  margin: 3rem auto 4rem auto;
+  margin: calc(1rem + 5vw) auto 0 auto;
   padding-left: 0.5rem;
 }
 @media (max-width:549px) {

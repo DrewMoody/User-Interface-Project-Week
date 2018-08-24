@@ -69,7 +69,7 @@ class TabItem {
     this.element.classList.add('show-content');
     TweenLite.from('.text-content h2', 1.5, {x:-300, ease: Back.easeOut.config(1.8)});
     TweenLite.from('.text-content p', 1.5, {y:300, ease: Power2.easeOut});
-    TweenLite.from('.tab-content img', 1.5, {rotation:180, x:200});
+    TweenLite.from('.tab-content img', 1.5, {ease:Sine.easeOut, x:300});
   };
 };
 

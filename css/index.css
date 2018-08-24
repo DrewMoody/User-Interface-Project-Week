@@ -320,6 +320,19 @@ address {
   z-index: 1;
   padding: 0 0 5% 7%;
 }
+.jumbo-load {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 50%;
+  width: 100%;
+  background: #e2e2e2;
+}
+.jumbo-load .home-jumbo {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .main {
   width: 85%;
   margin: 0 auto;

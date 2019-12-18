@@ -1,4 +1,6 @@
-# User Interface Project Week
+# Framework free JS site
+
+**Note:** This was built when I was first getting started in web development. It is not actively maintained.
 
 View deployed site here: https://hopeful-leavitt-1d9b87.netlify.com/
 
